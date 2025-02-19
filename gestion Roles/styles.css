@@ -1,0 +1,92 @@
+/* Variables CSS */
+:root {
+    --primary-color: #4CAF50;
+    --success-color: #dff0d8;
+    --error-color: #f2dede;
+    --text-color: #333;
+    --background-color: #f9f9f9;
+    --font-family: 'Arial', sans-serif;
+}
+
+/* Estilos generales */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+/* Estilos de enlaces */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: darkgreen;
+}
+
+/* Estilos de botones */
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+button:active {
+    background-color: #388e3c;
+}
+
+/* Estilos de formularios */
+input[type="email"],
+input[type="password"],
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Estilos para mensajes de éxito y error */
+.success {
+    background-color: var(--success-color);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.error {
+    background-color: var(--error-color);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 600px) {
+    input[type="email"],
+    input[type="password"],
+    input[type="text"],
+    select {
+        font-size: 14px;
+    }
+}
